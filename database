@@ -1,0 +1,14 @@
+drop database mini;
+create database mini;
+use mini;
+create table azumi( 
+id int primary key auto_increment,		
+		Nombre varchar(50),
+        Apellido varchar(50),
+        Direccion varchar(100),
+        Edad int,
+        DNI varchar(20)
+);
+insert into azumi(Nombre, Apellido,Direccion, Edad, DNI) values ("Azumi", "Rojas",  "Halla porvenir", "17","60744966"),
+											 ("Brayan",  "Espinoza", "Las palmas", "21","65428793");
+select * from azumi;
